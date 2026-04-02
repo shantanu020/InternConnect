@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In — InternConnect</title>
+  <meta name="description" content="Sign in to your InternConnect account to manage your applications, matches, and profile.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav scrolled">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><div class="logo-mark"><span class="logo-dot"></span><span class="logo-dot"></span></div><span>InternConnect</span></a>
+    <div class="nav-actions" style="margin-left:auto"><span style="font-size:0.875rem;color:var(--text-muted)">Don't have an account?</span><a href="signup.html" class="btn-primary-sm">Sign Up Free</a></div>
+  </div>
+</nav>
+<div class="auth-page">
+  <div class="auth-bg"><div class="hero-orb hero-orb-1"></div><div class="hero-orb hero-orb-2"></div></div>
+  <div class="auth-card">
+    <div class="auth-logo"><a href="index.html" class="logo"><div class="logo-mark"><span class="logo-dot"></span><span class="logo-dot"></span></div><span>InternConnect</span></a></div>
+    <h1 class="auth-title">Welcome back</h1>
+    <p class="auth-subtitle">Sign in to continue to your dashboard</p>
+    <button class="btn-social"><i data-lucide="chrome"></i>Continue with Google</button>
+    <button class="btn-social"><i data-lucide="github"></i>Continue with GitHub</button>
+    <div class="divider"><span>or sign in with email</span></div>
+    <form id="authForm">
+      <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="you@example.com" required></div>
+      <div class="form-group"><label class="form-label">Password</label><input class="form-input" type="password" placeholder="••••••••" required></div>
+      <a href="#" class="form-forgot">Forgot password?</a>
+      <button type="submit" class="btn-submit">Sign In</button>
+    </form>
+    <div class="auth-footer">Don't have an account? <a href="signup.html">Sign up free</a></div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body></html>

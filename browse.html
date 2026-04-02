@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Internships — InternConnect</title>
+  <meta name="description" content="Browse thousands of AI-matched internships. Filter by role, location, duration, stipend and more.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><div class="logo-mark"><span class="logo-dot"></span><span class="logo-dot"></span></div><span>InternConnect</span></a>
+    <ul class="nav-links"><li><a href="browse.html" style="color:var(--text-primary)">Browse Roles</a></li><li><a href="companies.html">For Companies</a></li><li><a href="index.html#how-it-works">How It Works</a></li><li><a href="index.html#pricing">Pricing</a></li></ul>
+    <div class="nav-actions"><a href="login.html" class="btn-ghost">Sign in</a><a href="signup.html" class="btn-primary-sm">Get Started</a></div>
+    <button class="hamburger" id="hamburger"><i data-lucide="menu"></i></button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu"><a href="browse.html">Browse Roles</a><a href="companies.html">For Companies</a><a href="login.html">Sign in</a><a href="signup.html" class="btn-primary-sm">Get Started</a></div>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="section-badge" style="margin-bottom:12px">2,847 open roles</div>
+    <h1>Find Your Perfect <span class="gradient-text">Internship</span></h1>
+    <p>AI-matched opportunities tailored to your skills, timeline, and goals.</p>
+    <div class="search-bar-wrap">
+      <div class="search-input-group"><i data-lucide="search"></i><input id="searchInput" type="search" placeholder="Role, skill, or company..."></div>
+      <div class="search-input-group" style="max-width:220px"><i data-lucide="map-pin"></i><input type="text" placeholder="Location or Remote"></div>
+      <button class="btn-search">Search</button>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="browse-layout">
+    <aside class="filters-sidebar">
+      <div class="filter-section">
+        <div class="filter-title">Internship Type</div>
+        <div class="filter-options">
+          <label class="filter-option"><input type="checkbox" value="micro"><span>Micro-internship (2–8 wks)</span></label>
+          <label class="filter-option"><input type="checkbox" value="full"><span>Full-term (3–6 months)</span></label>
+          <label class="filter-option"><input type="checkbox" value="part"><span>Part-time</span></label>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Work Mode</div>
+        <div class="filter-options">
+          <label class="filter-option"><input type="checkbox" value="remote"><span>Remote</span></label>
+          <label class="filter-option"><input type="checkbox" value="hybrid"><span>Hybrid</span></label>
+          <label class="filter-option"><input type="checkbox" value="onsite"><span>On-site</span></label>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Domain</div>
+        <div class="filter-options">
+          <label class="filter-option"><input type="checkbox" value="design"><span>Design <em>(342)</em></span></label>
+          <label class="filter-option"><input type="checkbox" value="engineering"><span>Engineering <em>(891)</em></span></label>
+          <label class="filter-option"><input type="checkbox" value="marketing"><span>Marketing <em>(214)</em></span></label>
+          <label class="filter-option"><input type="checkbox" value="product"><span>Product <em>(187)</em></span></label>
+          <label class="filter-option"><input type="checkbox" value="data"><span>Data & AI <em>(423)</em></span></label>
+        </div>
+      </div>
+      <div class="filter-section">
+        <div class="filter-title">Stipend</div>
+        <div class="filter-options">
+          <label class="filter-option"><input type="checkbox" value="paid"><span>Paid only</span></label>
+          <label class="filter-option"><input type="checkbox" value="unpaid"><span>Include unpaid</span></label>
+        </div>
+      </div>
+    </aside>
+    <main>
+      <div class="jobs-header">
+        <span class="jobs-count">Showing <strong>6</strong> of 2,847 roles</span>
+        <select class="sort-select"><option>Best Match</option><option>Newest</option><option>Stipend: High to Low</option></select>
+      </div>
+      <div class="jobs-grid">
+        <article class="job-card featured-job" data-aos="fade-up">
+          <div class="company-logo-wrap" style="background:rgba(99,102,241,0.15);color:var(--accent-light)">ST</div>
+          <div class="job-info"><h3>Product Design Intern</h3><div class="job-company">Stripe · San Francisco (Remote OK)</div><div class="job-tags"><span class="tag tag-remote">Remote</span><span class="tag tag-micro">Micro · 6 wks</span><span class="tag tag-paid">Paid</span><span class="tag">Figma</span><span class="tag">Design Systems</span></div></div>
+          <div class="job-meta"><div class="match-score"><i data-lucide="zap"></i>97% match</div><div class="stipend">₹85,000/mo</div><div class="duration">6 weeks · Starts Feb</div><div style="display:flex;gap:6px;margin-top:4px"><button class="btn-apply">Apply Now</button><button class="btn-save"><i data-lucide="bookmark"></i></button></div></div>
+        </article>
+        <article class="job-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="company-logo-wrap" style="background:rgba(6,182,212,0.15);color:#06b6d4">NO</div>
+          <div class="job-info"><h3>Frontend Engineering Intern</h3><div class="job-company">Notion · Remote</div><div class="job-tags"><span class="tag tag-remote">Remote</span><span class="tag">3 months</span><span class="tag tag-paid">Paid</span><span class="tag">React</span><span class="tag">TypeScript</span></div></div>
+          <div class="job-meta"><div class="match-score"><i data-lucide="zap"></i>93% match</div><div class="stipend">₹70,000/mo</div><div class="duration">3 months</div><div style="display:flex;gap:6px;margin-top:4px"><button class="btn-apply">Apply Now</button><button class="btn-save"><i data-lucide="bookmark"></i></button></div></div>
+        </article>
+        <article class="job-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="company-logo-wrap" style="background:rgba(16,185,129,0.15);color:#10b981">LI</div>
+          <div class="job-info"><h3>Data Science Intern</h3><div class="job-company">Linear · Berlin (Hybrid)</div><div class="job-tags"><span class="tag">Hybrid</span><span class="tag tag-micro">Micro · 4 wks</span><span class="tag tag-paid">Paid</span><span class="tag">Python</span><span class="tag">Data</span></div></div>
+          <div class="job-meta"><div class="match-score"><i data-lucide="zap"></i>88% match</div><div class="stipend">₹60,000/mo</div><div class="duration">4 weeks</div><div style="display:flex;gap:6px;margin-top:4px"><button class="btn-apply">Apply Now</button><button class="btn-save"><i data-lucide="bookmark"></i></button></div></div>
+        </article>
+        <article class="job-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="company-logo-wrap" style="background:rgba(245,158,11,0.15);color:#f59e0b">VE</div>
+          <div class="job-info"><h3>Growth Marketing Intern</h3><div class="job-company">Vercel · Remote</div><div class="job-tags"><span class="tag tag-remote">Remote</span><span class="tag">2 months</span><span class="tag tag-paid">Paid</span><span class="tag">Marketing</span><span class="tag">SEO</span></div></div>
+          <div class="job-meta"><div class="match-score"><i data-lucide="zap"></i>84% match</div><div class="stipend">₹45,000/mo</div><div class="duration">2 months</div><div style="display:flex;gap:6px;margin-top:4px"><button class="btn-apply">Apply Now</button><button class="btn-save"><i data-lucide="bookmark"></i></button></div></div>
+        </article>
+        <article class="job-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="company-logo-wrap" style="background:rgba(168,85,247,0.15);color:#a855f7">LO</div>
+          <div class="job-info"><h3>Product Management Intern</h3><div class="job-company">Loom · San Francisco</div><div class="job-tags"><span class="tag">On-site</span><span class="tag">3 months</span><span class="tag tag-paid">Paid</span><span class="tag">Product</span></div></div>
+          <div class="job-meta"><div class="match-score"><i data-lucide="zap"></i>91% match</div><div class="stipend">₹95,000/mo</div><div class="duration">3 months</div><div style="display:flex;gap:6px;margin-top:4px"><button class="btn-apply">Apply Now</button><button class="btn-save"><i data-lucide="bookmark"></i></button></div></div>
+        </article>
+        <article class="job-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="company-logo-wrap" style="background:rgba(239,68,68,0.15);color:#ef4444">BR</div>
+          <div class="job-info"><h3>Backend Engineering Intern</h3><div class="job-company">Brex · New York (Hybrid)</div><div class="job-tags"><span class="tag">Hybrid</span><span class="tag tag-micro">Micro · 8 wks</span><span class="tag tag-paid">Paid</span><span class="tag">Go</span><span class="tag">Engineering</span></div></div>
+          <div class="job-meta"><div class="match-score"><i data-lucide="zap"></i>79% match</div><div class="stipend">₹80,000/mo</div><div class="duration">8 weeks</div><div style="display:flex;gap:6px;margin-top:4px"><button class="btn-apply">Apply Now</button><button class="btn-save"><i data-lucide="bookmark"></i></button></div></div>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:40px"><button class="btn-plan-outline" style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px">Load More Roles <i data-lucide="chevron-down"></i></button></div>
+    </main>
+  </div>
+</div>
+<footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><a href="index.html" class="logo"><div class="logo-mark"><span class="logo-dot"></span><span class="logo-dot"></span></div><span>InternConnect</span></a><p>AI-powered internship marketplace.</p></div><div class="footer-col"><h4>Platform</h4><ul><li><a href="browse.html">Browse Roles</a></li><li><a href="companies.html">For Companies</a></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="#">Blog</a></li><li><a href="#">Career Guide</a></li></ul></div><div class="footer-col"><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Privacy</a></li></ul></div></div><div class="footer-bottom"><p>© 2024 InternConnect Technologies Pvt. Ltd.</p><p>Made with ♥ in India</p></div></div></footer>
+<script src="js/main.js"></script>
+</body></html>

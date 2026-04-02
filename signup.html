@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account — InternConnect</title>
+  <meta name="description" content="Create your InternConnect account and start finding AI-matched internships or hiring top interns today.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav scrolled">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><div class="logo-mark"><span class="logo-dot"></span><span class="logo-dot"></span></div><span>InternConnect</span></a>
+    <div class="nav-actions" style="margin-left:auto"><span style="font-size:0.875rem;color:var(--text-muted)">Already have an account?</span><a href="login.html" class="btn-ghost">Sign In</a></div>
+  </div>
+</nav>
+<div class="auth-page">
+  <div class="auth-bg"><div class="hero-orb hero-orb-1"></div><div class="hero-orb hero-orb-2"></div></div>
+  <div class="auth-card">
+    <div class="auth-logo"><a href="index.html" class="logo"><div class="logo-mark"><span class="logo-dot"></span><span class="logo-dot"></span></div><span>InternConnect</span></a></div>
+    <h1 class="auth-title">Create your account</h1>
+    <p class="auth-subtitle">Join 50,000+ users on InternConnect</p>
+    <div class="role-toggle">
+      <button class="role-btn active" data-role="intern"><i data-lucide="user-round"></i>I'm a Student</button>
+      <button class="role-btn" data-role="company"><i data-lucide="building-2"></i>I'm a Company</button>
+    </div>
+    <button class="btn-social"><i data-lucide="chrome"></i>Continue with Google</button>
+    <button class="btn-social"><i data-lucide="github"></i>Continue with GitHub</button>
+    <div class="divider"><span>or sign up with email</span></div>
+    <form id="authForm">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">First Name</label><input class="form-input" type="text" placeholder="Aryan" required></div>
+        <div class="form-group"><label class="form-label">Last Name</label><input class="form-input" type="text" placeholder="Patel" required></div>
+      </div>
+      <div class="form-group"><label class="form-label">Email</label><input class="form-input" type="email" placeholder="you@example.com" required></div>
+      <div id="extraFields">
+        <div class="form-group"><label class="form-label">University / College</label><input class="form-input" type="text" placeholder="IIT Bombay"></div>
+        <div class="form-group"><label class="form-label">Field of Study</label><input class="form-input" type="text" placeholder="Computer Science"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Password</label><input class="form-input" type="password" placeholder="Min. 8 characters" required></div>
+      <button type="submit" class="btn-submit">Create Account</button>
+      <p class="terms-note">By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+    </form>
+    <div class="auth-footer">Already have an account? <a href="login.html">Sign in</a></div>
+  </div>
+</div>
+<script src="js/main.js"></script>
+</body></html>
